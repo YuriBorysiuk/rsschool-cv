@@ -141,7 +141,7 @@ Computer Technology, Industrial Electronics, Electronics Engineer
 ---
 
 ## Languages
-English - A2
+English - A2 (B1 in progress)
 
 Polish  - Intermediate
 
