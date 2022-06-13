@@ -4,9 +4,326 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Yuri Borysiuk</title>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/fonts.css">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="script/index.js" type="module"></script>
 </head>
 <body>
-	<h1>My cv</h1>
+	<div class="container">
+		<header class="header">
+			<div class="header__photo">
+				<img src="img/My_photo.png" alt="My photo">
+			</div>
+			<div class="header__content">
+					<h1 class="header__name">
+						Yuri Borysiuk
+					</h1>
+					<h2 class="header__description">
+						Junior Front End Developer
+					</h2>
+			</div>
+			<button class="humburger-menu"></button>
+			<nav class="menu">
+				<ul class="menu-list">
+					<li class="menu-list__item">
+						<a href="#contact" class="menu-list__link">
+							Contact information
+						</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#skills" class="menu-list__link">
+							Skills
+						</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#languages" class="menu-list__link">
+							Languages
+						</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#about" class="menu-list__link">
+							About Me
+						</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#experience" class="menu-list__link">
+							Experience
+						</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#education" class="menu-list__link">
+							Education
+						</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#code" class="menu-list__link">
+							Code Example
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main-container">
+			<aside class="aside">
+				<section class="contact" id="contact">
+					<h3>Contact information</h3>
+					<ul>
+						<li>
+							<img 
+								src="img/icons/location.svg" 
+								alt="Location icon" 
+								width="30" 
+								height="30">
+							<p>Brest, Belarus</p>
+						</li>
+						<li>
+							<img 
+								src="img/icons/phone.svg" 
+								alt="Phone icon" 
+								width="30" 
+								height="30">
+							<p>(+37529) 820 18 50</p>
+						</li>
+						<li>
+							<img 
+								src="img/icons/email.svg" 
+								alt="Email icon" 
+								width="30" 
+								height="30">
+							<p>yuri.borysiuk@gmail.com</p>
+						</li>
+						<li>
+							<img 
+								src="img/icons/linkedin.svg" 
+								alt="LinkedIn social network icon" 
+								width="30" 
+								height="30">
+							<a href="https://www.linkedin.com/in/yuri-borysiuk/">yuri-borysiuk</a>
+						</li>
+						<li>
+							<img 
+								src="img/icons/github.svg" 
+								alt="GitHub web service icon" 
+								width="30" 
+								height="30">
+								<a href="https://github.com/YuriBorysiuk">YuriBorysiuk</a>
+						</li>
+					</ul>
+				</section>
+				<section class="skills" id="skills">
+					<h3>Skills</h3>
+					<ul>
+						<li>
+							<p class="skills__title">Languages and technologies:</p>
+							<p class="skills__text">JS (ES6), HTML5, CSS3, SASS (SCSS)</p>
+						</li>
+						<li>
+							<p class="skills__title">Libraries / frameworks:</p>
+							<p class="skills__text">Bootstrap, React (Basics)</p>
+						</li>
+						<li>
+							<p class="skills__title">Used tools and skills:</p>
+							<p class="skills__text">VS Code, Git (GitDesktop, terminal), Photoshop, Figma, Webpack, Node, npm, Firebase, Trello, principles of adaptive and cross-browser layout, Mobile First, BEM methodology, Agile, Kanban</p>
+						</li>
+					</ul>
+				</section>
+				<section class="language" id="languages">
+					<h3>Languages</h3>
+					<ul>
+						<li>
+							<span>English</span> - A2 (B1 in progress)
+						</li>
+						<li>
+							<span>Polish</span> - Intermediate
+						</li>
+						<li>
+							<span>Russian</span> - Native
+						</li>
+					</ul>
+				</section>
+			</aside>
+			<div class="main-content">
+				<section class="about" id="about">
+					<h3>About Me</h3>
+					<p>I'm looking for a junior front-end developer position. I work as a design engineer in JOFRE.</p>
+					<p>Communication skills and responsibility are developed, stress-resistant, I am not afraid of difficult and unsolvable, at first glance, tasks. Capable student. I am open to new opportunities, knowledge and skills. Motivated, hardworking.</p>
+				</section>
+				<section class="experience" id="experience">
+					<h3>Experience</h3>
+					<article class="experience-content">
+						<div class="experience-content__inner">
+							<h4 class="experiance-content__lable">
+								Aug 2021
+							</h4>
+						</div>
+						<div class="experiance-content__description">
+							<ul>
+								<li>
+									<span>Title:</span> Hot burgers
+								</li>
+								<li>
+									<span>Summary:</span> Create an app for ordering burgers using the React library. Study project
+								</li>
+								<li>
+									<span>Role:</span> React developer
+								</li>
+								<li>
+									<span>Technologies:</span> React, Stylus, Firebase, Git
+								</li>
+								<li>
+									<a href="https://github.com/YuriBorysiuk/React_project" target="_blank">
+										<img
+											class="experiance-content__image"
+											src="img/burger.png"
+											alt="screenshot of the 'Hot burgers' project">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+					<article class="experience-content">
+						<div class="experience-content__inner">
+							<h4 class="experiance-content__lable">
+								Jul 2021
+							</h4>
+						</div>
+						<div class="experiance-content__description">
+							<ul>
+								<li>
+									<span>Title:</span> Promo page
+								</li>
+								<li>
+									<span>Summary:</span> Layout of a promo-site advertising a BMW car
+								</li>
+								<li>
+									<span>Role:</span> Frontend developer, HTML layout designer
+								</li>
+								<li>
+									<span>Technologies:</span> HTML, SASS, JavaScript, Figma, Git
+								</li>
+								<li>
+									<a href="https://github.com/YuriBorysiuk/Promo_page_BMW/tree/dev" target="_blank">
+										<img
+											class="experiance-content__image" 
+											src="img/bmw.png"
+											alt="screenshot of the 'Promo page BMW' project">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+					<article class="experience-content">
+						<div class="experience-content__inner">
+							<h4 class="experiance-content__lable">
+								Jun 2021
+							</h4>
+						</div>
+						<div class="experiance-content__description">
+							<ul>
+								<li>
+									<span>Title:</span> Marathon from Vladilen Minin
+								</li>
+								<li>
+									<span>Summary:</span> Description: Passed a 5-day marathon from Vladilen Minin on which 5 projects were completed:
+									<ol type="1">
+										<li>
+											<a href="https://jsfiddle.net/nasgool/n3je7mhb/">Gallery from cards</a>
+										</li>
+										<li>
+											<a href="https://jsfiddle.net/nasgool/pq9avofh/">Working with Drag & Drop</a>
+										</li>
+										<li>
+											<a href="https://jsfiddle.net/nasgool/vh0x81sy/">Picture slider</a>
+										</li>
+										<li>
+											<a href="https://jsfiddle.net/nasgool/26ags90f/1/">Hover Board</a>
+										</li>
+										<li>
+											<a href="https://jsfiddle.net/nasgool/pztv4Lbj/">AIM Game</a>
+										</li>
+									</ol>
+								</li>
+								<li>
+									<span>Role:</span> Frontend developer
+								</li>
+								<li>
+									<span>Technologies:</span> HTML, CSS, JavaScript, Git
+								</li>
+								<li>
+									<a href="https://github.com/YuriBorysiuk/Marathon-minin" target="_blank">
+										<img
+											class="experiance-content__image" 
+											src="img/maraphon.png" 
+											alt="screenshot of the 'Maraphon Minin' project">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+					
+				</section>
+				<section class="education" id="education">
+					<h3>Education</h3>
+					<ol type="1">
+						<li>
+							2008-2012, Belarusian State University of Informatics and Radioelectronics (BSUIR). Computer Technology, Industrial Electronics, Electronics Engineer
+						</li>
+						<li>
+							JS, CSS, HTML, Git video courses on YouTube channel Glo Academy
+						</li>
+						<li>
+							JS video on YouTube channel Vladilen Minin
+						</li>
+						<li>
+							Course React JS “React 001” by Vasily Muravyov
+						</li>
+						<li>
+							RS Schools Course “JavaScript/Front-end 2021Q3 (stage 1)
+						</li>
+						<li>
+							RS Schools Course “JavaScript/Front-end 2022Q1 (stage 1)
+						</li>
+						<li>
+							RS Schools Course “JS/FE Pre-School 2022Q2 (in progress)
+						</li>
+					</ol>
+				</section>
+				<section class="code" id="code">
+					<h3>Code Example</h3>
+					<pre><code>
+	let number = +prompt('Введи число', '');
+
+	function colculation (number) {
+		number = number * 100;
+		return number;
+	}
+	alert('Результат функции ' +colculation(number));
+					</code></pre>
+				</section>
+			</div>
+		</main>
+		
+		<footer class="footer">
+			<div class="footer__links">
+				<a class="my-github" href="https://github.com/YuriBorysiuk" >
+					<img class="github-icon" src="img/icons/github.svg" alt="GitHub icon" >
+				</a>
+				<a class="rs-school" href="https://rs.school/js/" >
+					<img class="rsschool-icon" src="img/icons/rs_school_js.svg" alt="The Rolling Scopes community icon">
+				</a>
+				<a class="my-linkedin" href="https://www.linkedin.com/in/yuri-borysiuk/" >
+					<img class="linkedin-icon" src="img/icons/linkedin.svg" alt="LinkedIn icon" >
+				</a>
+			</div>
+			<div class="footer-copy__text">
+				© 2022 Yuri Borysiuk
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
