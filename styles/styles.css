@@ -1,0 +1,637 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: #242424;
+}
+
+p, ol, pre {
+	margin: 0;
+}
+
+ul {
+	display: list-item;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	box-sizing: border-box;
+	font-family: 'Gilroy', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
+/*=========================
+header
+=========================*/
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 100%;
+	background-color: #dd3535;
+	display: flex;
+	align-items: center;
+	padding: 0 50px 0;
+}
+
+/*menu*/
+.menu {
+	display: none;
+}
+
+.humburger-menu {
+	display: none;
+}
+/*menu end*/
+
+.header__photo img {
+	width: auto;
+	height: 205px;
+	border-radius: 50%;
+	margin: 15px;
+}
+
+.header__content {
+	text-align: center;
+	flex-grow: 1;
+}
+
+.header__name {
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 48px;
+}
+
+.header__description {
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 28px;
+}
+
+
+
+
+/*===========================
+main
+===========================*/
+
+.main-container {
+	display: flex;
+}
+
+h3 {
+	color: #dd3535;
+	font-weight: 700;
+	font-size: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 25px 0;
+}
+
+.aside {
+	width:30%;
+	padding: 10px;
+	background-color: #f5b6b6
+}
+
+.contact li {
+	display: flex;
+	align-items: center;
+}
+
+.contact img {
+	margin: 5px;
+}
+
+.contact p {
+	margin: 10px;
+}
+
+.contact a {
+	margin: 10px;
+}
+
+.skills li:not(:first-child) {
+	padding: 15px 0 0;
+}
+
+.skills__title {
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+.skills__text {
+	margin-top: 0;
+}
+
+.language span {
+	font-weight: 600;
+}
+.main-content {
+	width: 70%;
+	padding: 10px;
+	border: 1px solid #f5b6b6;
+}
+
+.experience-content {
+	display: flex;
+	align-items: flex-start;
+	padding: 15px 0 0;
+}
+
+.experiance-content__lable {
+	width: 100px;
+	background: #484b4e;
+	display: inline-block;
+	color: #fff;
+	position: relative;
+	padding: 10px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	margin: 0 30px 0 0;
+	text-decoration: none;
+}
+
+.experiance-content__lable:after {
+	display: inline-block;
+	border: 21px solid;
+	border-color: transparent transparent transparent #484b4e;
+	height: 0;
+	width: 0;
+	position: absolute;
+	right: -42px;
+	top: 0;
+	content: "";
+}
+
+.experiance-content__description span {
+	font-weight: 600;
+}
+
+.experiance-content__image {
+	height: auto;
+	max-width: 100%;
+}
+
+pre code {
+	tab-size: 4;
+	white-space: pre-wrap;
+}
+
+/*========================
+footer
+========================*/
+
+.footer {
+	background-color: #dd3535;
+}
+.footer__links {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__links a {
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 12px;
+	padding: 10px 0;
+}
+
+.my-github {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.my-linkedin {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.github-icon, .linkedin-icon {
+	width: 26px;
+	height: 26px;
+}
+
+.github-icon {
+	margin-right: 50px;
+}
+
+.linkedin-icon {
+	margin-left: 50px;
+}
+
+.rsschool-icon {
+	width: 100px;
+	height: 100%;
+}
+
+.footer-copy__text {
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 12px;
+	text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+		/*=============
+	footer
+	=============*/
+
+	.header {
+		line-height: 1.2;
+		padding: 0 15px 0;
+	}
+
+	/*menu*/
+	.menu {
+		display: none;
+	}
+
+	.humburger-menu {
+		display: none;
+	}
+	/*menu end*/
+
+	/*============
+	main
+	==============*/
+
+	/*.main-container {
+		flex-direction: column;
+	}*/
+	
+	h3 {
+		padding: 15px 0;
+	}
+	
+	.aside {
+		width:45%;
+		padding-bottom: 0;
+	}
+	
+	.skills li:not(:first-child) {
+		padding: 8px 0 0;
+	}
+	
+	.main-content {
+		width: 55%;
+		padding-top: 0;
+	}
+
+	.experience-content {
+		flex-direction: column;
+		padding: 8px 0 0;
+	}
+
+	.experiance-content__lable {
+		width: 80px;
+		padding: 2px;
+		border-radius: 4px;
+	}
+
+	.experiance-content__lable:after {
+		display: none;
+	}
+	
+	pre code {
+		white-space: pre-wrap;
+		tab-size: 2;
+		padding: 0;
+	}
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+	/*=============
+	footer
+	=============*/
+
+	.header {
+		line-height: 1.2;
+		padding: 0 15px 0;
+	}
+
+	/*menu*/
+	.menu {
+		display: none;
+	}
+
+	.humburger-menu {
+		display: none;
+	}
+	/*menu end*/
+
+	/*============
+	main
+	==============*/
+
+	.main-container {
+		flex-direction: column;
+	}
+	
+	h3 {
+		padding: 15px 0;
+	}
+	
+	.aside {
+		width:100%;
+		padding-bottom: 0;
+	}
+	
+	.skills li:not(:first-child) {
+		padding: 8px 0 0;
+	}
+	
+	.main-content {
+		width: 100%;
+		padding-top: 0;
+	}
+
+	.experience-content {
+		flex-direction: column;
+		padding: 8px 0 0;
+	}
+
+	.experiance-content__lable {
+		width: 80px;
+		padding: 2px;
+		border-radius: 4px;
+	}
+
+	.experiance-content__lable:after {
+		display: none;
+	}
+	
+	pre code {
+		white-space: pre-wrap;
+		tab-size: 2;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	/*=============
+	header
+	=============*/
+
+	h1 {
+		margin-top: 0px;
+	}
+	
+	.container {
+		margin: 0 auto;
+	}
+	
+	.header {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		line-height: 1.2;
+		padding: 10px;
+	}
+
+	/*menu*/
+	.menu {
+		display: none;
+		height: 100%;
+		background-color: #000;
+	}
+
+	.menu-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.menu-list__item {
+		padding: 5px 0;
+	}
+
+	.menu-list__link {
+		color: #fff;
+		font-size: 18px;
+	}
+
+	.humburger-menu {
+		display: none;
+		background-image: url('../img/icons/menu.svg');
+		background-color: transparent;
+		background-size: contain;
+		width: 30px;
+		height: 30px;
+		border: none;
+		transition: background-image 0.5s;
+		margin-bottom: 10px;
+	}
+
+	.humburger-menu-active {
+		background-image: url('../img/icons/close.svg');
+	}
+
+	.humburger-menu {
+		display: block;
+	}
+
+	.menu-active {
+		display: block;
+		width: 100%;
+	}
+	/*menu end*/
+
+	/*=============
+	main
+	=============*/
+
+	.main-container {
+		flex-direction: column;
+	}
+	
+	h3 {
+		padding: 15px 0;
+	}
+	
+	.aside {
+		width:100%;
+		padding-bottom: 0;
+	}
+	
+	.skills li:not(:first-child) {
+		padding: 8px 0 0;
+	}
+	
+	.main-content {
+		width: 100%;
+		padding-top: 0;
+	}
+	
+	.experience-content {
+		flex-direction: column;
+		padding: 8px 0 0;
+	}
+
+	.experiance-content__lable {
+		width: 80px;
+		padding: 2px;
+		border-radius: 4px;
+	}
+
+	.experiance-content__lable:after {
+		display: none;
+	}
+	
+	pre code {
+		white-space: pre-wrap;
+		tab-size: 2;
+		font-size: 18px;
+		padding: 0;
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+
+	/*=============
+	header
+	=============*/
+
+	h1 {
+		margin-top: 0px;
+	}
+	
+	.container {
+		margin: 0 auto;
+	}
+	
+	.header {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		line-height: 1.2;
+		padding: 0;
+	}
+
+	/*menu*/
+	.menu {
+		display: none;
+		height: 100%;
+		background-color: #000;
+	}
+
+	.menu-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.menu-list__item {
+		padding: 5px 0;
+	}
+
+	.menu-list__link {
+		color: #fff;
+		font-size: 18px;
+	}
+
+	.humburger-menu {
+		display: none;
+		background-image: url('../img/icons/menu.svg');
+		background-color: transparent;
+		background-size: contain;
+		width: 30px;
+		height: 30px;
+		border: none;
+		transition: background-image 0.5s;
+		margin-bottom: 10px;
+	}
+
+	.humburger-menu-active {
+		background-image: url('../img/icons/close.svg');
+	}
+
+	.humburger-menu {
+		display: block;
+	}
+
+	.menu-active {
+		display: block;
+		width: 100%;
+	}
+	
+	/*menu end*/
+
+	/*=============
+	main
+	=============*/
+
+	.main-container {
+		flex-direction: column;
+	}
+	
+	h3 {
+		padding: 15px 0;
+	}
+	
+	.aside {
+		width:100%;
+		padding-bottom: 0;
+	}
+	
+	.skills li:not(:first-child) {
+		padding: 8px 0 0;
+	}
+	
+	.main-content {
+		width: 100%;
+		padding-top: 0;
+	}
+	
+	.experience-content {
+		flex-direction: column;
+		padding: 8px 0 0;
+	}
+
+	.experiance-content__lable {
+		width: 80px;
+		padding: 2px;
+		border-radius: 4px;
+	}
+
+	.experiance-content__lable:after {
+		display: none;
+	}
+	
+	pre code {
+		white-space: pre-wrap;
+		tab-size: 2;
+		font-size: 16px;
+		padding: 0;
+	}
+}
+
+
